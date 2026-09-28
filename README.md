@@ -1,13 +1,16 @@
-# ZoneAds AI public product preview
+# ZoneAds AI review website
 
-This repository contains the public, review-facing product website for ZoneAds AI.
+Public, review-facing website for ZoneAds AI. It explains the campaign workspace, TikTok Marketing API use case, requested access, data lifecycle and support channels.
 
-It is intentionally separate from the private application project. The current site is an informational product preview; it does not contain a TikTok OAuth client secret, backend, campaign automation service, or live ad-account connection.
+The public product page uses illustrative campaign information. It does not contain API credentials, contact TikTok, create campaigns or authorize spend.
 
-## GitHub Pages
+## Public routes
 
-The intended project-site URL is:
+- `/` — product overview
+- `/tiktok-ads/` — TikTok Ads integration product page
+- `/privacy.html` — privacy and connected-platform data policy
+- `/terms.html` — service terms
+- `/support/` — product, privacy and security contacts
+- `/account-deletion/` — account and platform-data deletion instructions
 
-https://shogunzal.github.io/zoneads-public/
-
-Enable GitHub Pages from the `main` branch with the repository root as the publishing directory. Keep the website URL, privacy URL, terms URL, and any review materials consistent with the live URL.
+The website can be served as static files. `vercel.json` applies production security headers on Vercel; each HTML page also includes a restrictive browser policy for static hosts.
